@@ -83,3 +83,8 @@ button{
     font-size: 13px;
     font-weight: 400;
 }
+
+.heading{
+    position: absolute;
+    top: 5px;
+}

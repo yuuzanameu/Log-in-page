@@ -12,12 +12,6 @@ body{
     border: 2px solid rgb(0, 21, 255);
 }
 
-.inputs hr{
-    margin: 0;
-    border: 1px solid rgb(115, 112, 110);
-    width: 100%;
-}
-
 .container{
     background: transparent;
     backdrop-filter: blur(5px);
@@ -31,6 +25,11 @@ body{
     box-shadow: 0 0 20px black;
 }
 
+.inputs hr{
+    margin: 0;
+    border: 1px solid rgb(115, 112, 110);
+    width: 100%;
+}
 
 .container > * {
     width: 80%;
@@ -84,7 +83,78 @@ button{
     font-weight: 400;
 }
 
-.heading{
-    position: absolute;
-    top: 5px;
+
+@media screen and (max-width: 480px) {
+
+    .container{
+        background: transparent;
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-basis: 80%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px black;
+    }
+
+    .inputs hr{
+        margin: 0;
+        border: 1px solid rgb(115, 112, 110);
+        width: 100%;
+    }
+    
+    .container > * {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .inputs > *{
+        margin-bottom: 5px;
+    }
+    
+    .inputs input{
+        width: 80%;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    #person{
+        position: absolute;
+        align-self: flex-end;
+        top: 0;
+    }
+    
+    #lock{
+        position: absolute;
+        align-self: flex-end;
+        bottom: 0;
+    }
+    
+    button{
+        height: 40px;
+        background-color: rgb(128, 128, 128);
+    }
+    
+    .clickinputs{
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    
 }
